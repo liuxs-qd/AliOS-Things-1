@@ -1,0 +1,10 @@
+{
+    "haasStudio.appType": "c",
+    "haasStudio.name": "eduk1_demo",
+    "haasStudio.hardware.board": "haaseduk1",
+    "files.associations": {
+        "mutex.h": "c"
+    },
+    "haasStudio.comPort": "COM23",
+    "haasStudio.hardware.baudrate": 1500000
+}

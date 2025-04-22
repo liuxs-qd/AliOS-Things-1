@@ -7,6 +7,7 @@
 #include <aos/hal/spi.h>
 #include <vfsdev/spi_dev.h>
 #include <devicevfs/devicevfs.h>
+#include <drivers/mutex.h>
 
 #ifdef CONFIG_SPI_NUM
 #define PLATFORM_SPI_NUM CONFIG_SPI_NUM

@@ -1,0 +1,6 @@
+components/uvoice/codec/opensource/pvmp3/source/
+hardware/chip/haas1000/macro_defines.h
+hardware/chip/haas1000/prebuild/data/data/mp3/
+hardware/chip/haas1000/release/aos_burn_tool/__pycache__/
+solutions/eduk1_demo/.config_monitor
+.components.db

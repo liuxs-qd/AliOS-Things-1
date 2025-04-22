@@ -17,9 +17,9 @@ extern "C" {
  * @{
  */
 
-//#if defined(__GNUC__)&&!defined(__CC_ARM)||defined(_WIN32)
-#if 0
-#include <bt_errno.h>
+#if defined(__GNUC__)&&!defined(__CC_ARM)||defined(_WIN32)
+// #if 0
+#include <errno.h>
 
 #else
 /* Define standard errno for __CC_ARM and __ICCARM__ */

@@ -6,6 +6,7 @@
 #include <aos/hal/uart.h>
 #include <vfsdev/uart_dev.h>
 #include <devicevfs/devicevfs.h>
+#include <drivers/mutex.h>
 
 #ifdef CONFIG_UART_NUM
 #define PLATFORM_UART_NUM CONFIG_UART_NUM
