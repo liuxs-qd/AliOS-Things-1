@@ -40,7 +40,7 @@ struct cli_region
 #define ALIOS_CLI_CMD_REGISTER(name, cmd, desc)                        \
     const char __clisym_##cmd##_name[] SECTION(".rodata") = #cmd;      \
     const char __clisym_##cmd##_desc[] SECTION(".rodata") = #desc;     \
-    static void name##_stub(char *buf, int len, int argc, char **argv) \
+    static void cmd##_stub(char *buf, int len, int argc, char **argv) \
     {                                                                  \
         name(argc, argv);                                              \
     }                                                                  \
@@ -48,7 +48,7 @@ struct cli_region
         {                                                              \
             __clisym_##cmd##_name,                                     \
             __clisym_##cmd##_desc,                                     \
-            (cli_region_func)&name##_stub};
+            (cli_region_func)&cmd##_stub};
 
 
 /**
